@@ -17,7 +17,7 @@ const Hero = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>Moje Portfolio
+                <HeroH1>Mateusz Przęczek
                 </HeroH1>
                 <HeroP>Front-end Developer with Html, Css, Javascript, React js, Redux, Node js</HeroP>
                 <HeroBtnWrapper>
