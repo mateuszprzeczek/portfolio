@@ -1,26 +1,36 @@
 import React from 'react'
 
-import { AboutContainer, AboutWrapper, AboutRow, Column, Column2, ImgWrap, Img } from '../About/AboutElements'
+import { ProjectsContainer, ProjectsWrapper, ProjectsRow, Column, Column2, ImgWrap, Img, TextWrapper, TopLine, Column3, Column4, Subtitle } from '../ProjectsSection/ProjectsElements'
 
 const Projects = (props) => {
     return (
         <>
-        <AboutContainer lightBg={props.lightBg} id={props.id}>
-            <AboutWrapper>
-                <AboutRow imgStart={props.imgStart}>
+        <ProjectsContainer lightBg={props.lightBg} id={props.id}>
+            <ProjectsWrapper>
+                <ProjectsRow imgStart={props.imgStart}>
+                    <Column4>
+                    <TextWrapper>
+                        <TopLine>Technologie</TopLine>
+                    </TextWrapper>
+                    </Column4>
                     <Column>
                     <ImgWrap>
                     <Img src={props.img2} alt={props.alt} />
                     </ImgWrap>
                     </Column>
+                    <Column3>
+                    <TextWrapper>
+                        <Subtitle>{props.description}</Subtitle>
+                    </TextWrapper>
+                    </Column3>
                     <Column2>
                     <ImgWrap>
                     <Img src={props.img} alt={props.alt} />
                     </ImgWrap>
                     </Column2>
-                </AboutRow>
-            </AboutWrapper>
-            </AboutContainer>   
+                </ProjectsRow>
+            </ProjectsWrapper>
+            </ProjectsContainer>   
        </>
     )
 }

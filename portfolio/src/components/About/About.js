@@ -13,10 +13,9 @@ const About = (props) => {
                      <Column>
                         <TextWrapper>
                              <TopLine>{props.topLine}</TopLine>
-                                <Heading lightText={props.lightText}>{props.headline}</Heading>
                             <Subtitle darkText={props.darkText}>{props.description}</Subtitle>
                             <BtnWrap>
-                        <Button to='/home'
+                        <Button to='techs'
                             smooth={true}
                             duration={500}
                             spy={true}

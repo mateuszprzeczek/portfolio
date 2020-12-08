@@ -21,31 +21,29 @@ export const AboutData = {
 }
 
 export const TechsData = {
-    id: 'techs',
+    id: 'projects',
     lightBg: true,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'O mnie',
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Projekty',
     headline: 'Mateusz Przęczek',
     description: 'Web Developer, programista Java, samouk. Na codzień freelancer, który tworzy responsywne strony internetowe wykorzystując framework React.',
     buttonLabel: 'Technologie',
-    imgStart: false,
-    img: reactImg,
-    img2:  htmlImg,
+    imgStart: true,
     alt: 'Mateusz Przęczek',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: true
 }
 
 export const ProjectsData = {
-    id: 'projects',
+    id: 'techs',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'O mnie',
+    topLine: 'Web Developer, programista Java, samouk. Na codzień freelancer, który tworzy responsywne strony internetowe wykorzystując framework React.',
     headline: 'Mateusz Przęczek',
-    description: 'Web Developer, programista Java, samouk. Na codzień freelancer, który tworzy responsywne strony internetowe wykorzystując framework React.',
+    description: 'Css, Html5, RWD, JavaScript, React, Redux, Bootstrap',
     buttonLabel: 'Technologie',
     imgStart: false,
     img: reactImg,

@@ -4,7 +4,7 @@ import { Link as LinkS } from 'react-scroll';
 
 export const SidebarContainer = styled.aside`
     position: fixed;
-    z-index: 999;
+    z-index: 100;
     width: 100%;
     height: 100%;
     background: #0d0d0d;
@@ -19,6 +19,7 @@ export const SidebarContainer = styled.aside`
 
 export const CloseIcon = styled(FaTimes)`
     color: #fff;
+    right: 0;
 `
 
 export const Icon = styled.div`

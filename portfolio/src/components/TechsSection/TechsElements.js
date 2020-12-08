@@ -5,7 +5,10 @@ color: #fff;
 background: ${({lightBg}) => (lightBg ? '#f9f9f9' : 'rgb(5, 5, 5)')};
 
 @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 230px 0;
+}
+@media screen and (max-width: 522px) {
+    padding: 50px 0;
 }
 `;
 
@@ -19,53 +22,107 @@ margin-right: auto;
 margin-left: auto;
 padding: 0 24px;
 justify-content: center;
+
 `;
+
+export const TextWrapper = styled.div`
+    max-width: 540px;
+    padding-top: 0;
+    text-align: center;
+`;
+
+export const TopLine = styled.p`
+    color: gold;
+    font-size: 32px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+`;
+
+export const Heading = styled.h1`
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
+
+    @media screen and (max-width: 480px) {
+        font-size: 32px;
+    }
+`;
+
+export const Subtitle = styled.p`
+    max-width: 440px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 24px;
+    color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+`;
+
+export const Link = styled.a`
+    margin: auto;
+`
 
 export const TechsRow = styled.div`
 display: grid;
+gap: 2%;
 grid-auto-columns: minmax(auto, 1fr);
 align-items: center;
-grid-template-areas: ${({ imgStart }) => imgStart ? `'col2 col1'` : `'col1 col2'`};
+grid-template-areas: ${({ imgStart }) => imgStart ? ` ' col3 . ' 'col1  col4' 'col2  col5'` : ` 'col3 col2 col1'`};
 
 @media screen and (max-width: 768px) {
-    grid-template-areas: ${({imgStart}) => imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2' `};
+    grid-template-areas: ${({imgStart}) => imgStart ? `'col3' 'col1' 'col4' 'col2' 'col5'` : `'col3 col3' 'col2 col2' `};
 }
 `
 
 export const Column = styled.div`
-    margin-bottom: 15px;
-    padding: 0 15px;
     grid-area: col1;
 `;
 
 export const Column2 = styled.div`
-    margin-bottom: 15px;
-    padding: 0 15px;
     grid-area: col2;
+`;
+
+export const Column3 = styled.div`
+    grid-area: col3;
+`;
+
+export const Column4 = styled.div`
+    grid-area: col4;
+`;
+
+export const Column5 = styled.div`
+    grid-area: col5;
 `;
 
 export const ImgWrap = styled.div`
     max-width: 555px;
-    height: 100%;
+    
 `;
 
 export const Img = styled.img`
     width: 100%;
-    margin: 0 0 10px 0;
     padding-right: 0;
 `;
 
 export const VideoBg = styled.video`
     width: 100%;
-    height: 100%;
+    height: auto;
     -o-object-fit: cover;
     object-fit: cover;
-    background: #232a34;
 `
 export const VideoBg2 = styled.video`
-    width: 100%;
-    height: 300px;
-    -o-object-fit: contain;
-    object-fit: contain;
-    background: #232a34;
+width: 100%;
+height: auto;
+    -o-object-fit: scale-down;
+    object-fit: scale-down;
+`
+export const VideoBg3 = styled.video`
+width: 100%;
+height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+
 `
