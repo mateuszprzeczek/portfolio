@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.88e634e9.chunk.css",
-    "main.js": "/portfolio/static/js/main.59cb1af2.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.59cb1af2.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.d42e039e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.d42e039e.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.8fed2963.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.8fed2963.js.map",
     "static/js/2.f7118c4d.chunk.js": "/portfolio/static/js/2.f7118c4d.chunk.js",
@@ -17,12 +17,12 @@
     "static/media/paragliding.a44263db.mp4": "/portfolio/static/media/paragliding.a44263db.mp4",
     "static/media/questions2.12a805e7.mp4": "/portfolio/static/media/questions2.12a805e7.mp4",
     "static/media/react.e412c59e.svg": "/portfolio/static/media/react.e412c59e.svg",
-    "static/media/video.910e8a45.mp4": "/portfolio/static/media/video.910e8a45.mp4"
+    "static/media/video2.cabdf15a.mp4": "/portfolio/static/media/video2.cabdf15a.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.8fed2963.js",
     "static/js/2.f7118c4d.chunk.js",
     "static/css/main.88e634e9.chunk.css",
-    "static/js/main.59cb1af2.chunk.js"
+    "static/js/main.d42e039e.chunk.js"
   ]
 }
