@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {Link as LinkS} from 'react-scroll';
+import {Link as LinkR} from 'react-router-dom'
 import {motion} from 'framer-motion'
 
 export const Nav = styled(motion.nav)`
@@ -29,7 +30,7 @@ export const NavbarContainer = styled.div`
     max-width: 1100px;
 `
 
-export const NavLogo = styled(LinkS)`
+export const NavLogo = styled(LinkR)`
     color: #fff;
     justify-self: flex-start;
     cursor: pointer;

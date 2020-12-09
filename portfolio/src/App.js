@@ -6,8 +6,8 @@ import Home from './pages/home';
 function App() {
   return (
     <Router>
-      <Route path={'/'} exact component={Home} />
-      {/* <Home /> */}
+      <Route path={'/portfolio'} exact component={Home} />
+      <Home />
     </Router>
   );
 }

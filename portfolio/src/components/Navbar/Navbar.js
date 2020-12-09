@@ -38,7 +38,7 @@ const Navbar = ({toggle}) => {
             transition={{duration: 5}}
             >
                 <NavbarContainer>
-                    <NavLogo to="/" smooth={true} duration={500} spy={true} exact='true' offset={-80} onClick={scrollTop}>Portfolio</NavLogo>
+                    <NavLogo to="/portfolio" smooth={true} duration={500} spy={true} exact='true' offset={-80} onClick={scrollTop}>Portfolio</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
