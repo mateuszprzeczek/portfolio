@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {motion} from 'framer-motion'
 
 export const TechsContainer = styled.div`
 color: #fff;
@@ -97,9 +98,9 @@ export const Column5 = styled.div`
     grid-area: col5;
 `;
 
-export const ImgWrap = styled.div`
+export const ImgWrap = styled(motion.div)`
     max-width: 555px;
-    
+    border-radius: 15px;
 `;
 
 export const Img = styled.img`
@@ -107,21 +108,24 @@ export const Img = styled.img`
     padding-right: 0;
 `;
 
-export const VideoBg = styled.video`
+export const VideoBg = styled(motion.video)`
     width: 100%;
     height: auto;
+    border-radius: 15px;
     -o-object-fit: cover;
     object-fit: cover;
 `
-export const VideoBg2 = styled.video`
+export const VideoBg2 = styled(motion.video)`
 width: 100%;
 height: auto;
+border-radius: 15px;
     -o-object-fit: scale-down;
     object-fit: scale-down;
 `
-export const VideoBg3 = styled.video`
+export const VideoBg3 = styled(motion.video)`
 width: 100%;
 height: auto;
+border-radius: 15px;
     -o-object-fit: cover;
     object-fit: cover;
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Button } from '../ButtonElement';
-import { AboutContainer, AboutWrapper, AboutRow, Column, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img } from './AboutElements'
+import { AboutContainer, AboutWrapper, AboutRow, Column, Column2, TextWrapper, TopLine, Subtitle, BtnWrap, ImgWrap, Img } from './AboutElements'
 
 
 const About = (props) => {

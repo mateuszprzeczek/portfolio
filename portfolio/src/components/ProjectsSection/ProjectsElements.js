@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {motion} from 'framer-motion'
 
 export const ProjectsContainer = styled.div`
 color: #fff;
@@ -76,13 +77,13 @@ export const Column4 = styled.div`
     grid-area: col4;
 `;
 
-export const ImgWrap = styled.div`
+export const ImgWrap = styled(motion.div)`
     max-width: 555px;
     height: 100%;
     
 `;
 
-export const Img = styled.img`
+export const Img = styled(motion.img)`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import Video from '../../videos/video2.mp4'
+import Video from '../../videos/video3.mp4'
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroBtnWrapper, HeroP, ArrowFoward, ArrowRight } from './HeroElements'
 import {Button} from '../ButtonElement'
 
@@ -17,11 +17,24 @@ const Hero = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>Mateusz Przęczek
+                <HeroH1
+                initial={{ opacity: 0 , fontSize: '14px'}}
+                animate={{opacity: 1, fontSize: '48px'}}
+                transition={{duration: 2}}
+                >Mateusz Przęczek
                 </HeroH1>
-                <HeroP>Front-end Developer with Html, Css, Javascript, React js, Redux, Node js</HeroP>
-                <HeroBtnWrapper>
-                    <Button to="projects" onMouseEnter={onHover}
+                <HeroP
+                initial={{ opacity: 0 , marginTop: '-200px'}}
+                animate={{opacity: 1 , marginTop: '24px'}}
+                transition={{duration: 4}}
+                >Front-end Developer with Html, Css, Javascript, React js, Redux, Node js</HeroP>
+                <HeroBtnWrapper
+                initial={{ opacity: 0 }}
+                animate={{opacity: 1 }}
+                transition={{duration: 10}}
+                >
+                    <Button to="projects" 
+                    onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     smooth={true}
                             duration={500}

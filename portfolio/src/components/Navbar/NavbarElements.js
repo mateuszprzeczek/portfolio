@@ -1,15 +1,15 @@
 import styled from 'styled-components';
-import {Link as LinkR} from 'react-router-dom';
 import {Link as LinkS} from 'react-scroll';
+import {motion} from 'framer-motion'
 
-export const Nav = styled.nav`
+export const Nav = styled(motion.nav)`
     background: #000;
     height: 80px;
     margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.4rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -29,7 +29,7 @@ export const NavbarContainer = styled.div`
     max-width: 1100px;
 `
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(LinkS)`
     color: #fff;
     justify-self: flex-start;
     cursor: pointer;
@@ -61,7 +61,7 @@ export const MobileIcon = styled.div`
     }
 `
 
-export const NavMenu = styled.ul`
+export const NavMenu = styled(motion.ul)`
     display: flex;
     align-items: center;
     list-style: none;
@@ -73,7 +73,7 @@ export const NavMenu = styled.ul`
     }
 `
 
-export const NavItem = styled.li`
+export const NavItem = styled(motion.li)`
     height: 80px;
 `
 
@@ -96,7 +96,7 @@ export const NavLinks = styled(LinkS)`
     }
 `
 
-export const NavBtn = styled.nav`
+export const NavBtn = styled(motion.nav)`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,7 +107,7 @@ export const NavBtn = styled.nav`
     }
 `
 
-export const GithubLink = styled.a`
+export const GithubLink = styled(motion.a)`
     border-radius: 50px;
     background: white;
     margin: 10px;
@@ -127,7 +127,7 @@ export const GithubLink = styled.a`
         color: #010606;
     }
 `
-export const LinkedinLink = styled.a`
+export const LinkedinLink = styled(motion.a)`
     border-radius: 10%;
     background: #87CEFA;
     white-space: nowrap;

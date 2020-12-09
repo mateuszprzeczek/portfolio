@@ -1,12 +1,27 @@
-import React from 'react'
-
+import React, {useState} from 'react'
+import axios from 'axios'
 import { TechsContainer, TechsWrapper, TechsRow, Column, Column2, ImgWrap, VideoBg, VideoBg2, VideoBg3, TextWrapper, TopLine, Column3, Column4, Column5, Link } from './TechsElements'
 import olaVideo from '../../videos/olaM.mp4'
 import maniekVideo from '../../videos/paragliding.mp4'
-import questions from '../../videos/questions2.mp4'
+import questionsVideo from '../../videos/questions2.mp4'
 import zlobek from '../../videos/zlobek.mp4'
+import Iframe from '../Iframe/Iframe'
 
 const Techs = (props) => {
+    const [qClicked, setQClicked] = useState(false)
+    
+    const onQuestionsClickHandler = () => {
+        setQClicked(true);
+    }
+    let questions = (
+            <VideoBg3 autoPlay loop muted src={questionsVideo} onClick={onQuestionsClickHandler} type='video/mp4' />
+    )
+    if(qClicked) {
+        questions = (
+            <Iframe source='https://questions-69538.web.app/' />
+        )
+    }
+
     return (
         <>
         <TechsContainer lightBg={props.lightBg} id={props.id}>
@@ -19,9 +34,7 @@ const Techs = (props) => {
                     </Column3>
                     <Column4>
                     <ImgWrap>
-                    <Link href="https://questions-69538.web.app/">
-                    <VideoBg3 autoPlay loop muted src={questions} type='video/mp4' />
-                    </Link>
+                    {questions}
                     </ImgWrap>
                     </Column4>
                     <Column>

@@ -15,7 +15,12 @@ const Projects = (props) => {
                     </Column4>
                     <Column>
                     <ImgWrap>
-                    <Img src={props.img2} alt={props.alt} />
+                    <Img 
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 2 }}
+                    
+                    
+                    src={props.img2} alt={props.alt} />
                     </ImgWrap>
                     </Column>
                     <Column3>
