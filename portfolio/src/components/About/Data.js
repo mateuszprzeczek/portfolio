@@ -54,3 +54,7 @@ export const ProjectsData = {
     primary: true,
     darkText: false
 }
+
+export const ContactData = {
+    id: 'contact'
+}

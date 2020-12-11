@@ -23,6 +23,16 @@ export const HeroContainer = styled.div`
         rgba(0,0,0,0.2) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
         z-index: 1;
     }
+
+    @media (max-width: 768px) {
+        height: 660px;
+    }
+    @media (max-width: 768px orientation: landscape) {
+        height: 400px;
+    }
+    @media (min-height: 800px) {
+        height: 1000px;
+    }
 `
 
 export const HeroBg = styled.div`

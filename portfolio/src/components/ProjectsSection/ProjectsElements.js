@@ -36,6 +36,11 @@ grid-template-areas: ${({ imgStart }) => imgStart ? ` 'col4' 'col2 col3 col1'` :
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
+
+    @media (orientation: landscape) {
+        width: 80%;
+        margin-left: 60px;
+    }
 `;
 
 export const TopLine = styled.p`
@@ -81,10 +86,19 @@ export const ImgWrap = styled(motion.div)`
     max-width: 555px;
     height: 100%;
     
+    
 `;
 
 export const Img = styled(motion.img)`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+
+    @media (max-width: 500px) and (orientation: portrait) {
+        object-fit: contain;
+    }
+    @media (max-width: 500px) and (orientation: landscape) {
+        width: 80%;
+        margin-left: 60px;
+    }
 `;

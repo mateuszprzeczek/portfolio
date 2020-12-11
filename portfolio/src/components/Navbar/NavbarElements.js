@@ -101,39 +101,45 @@ export const NavBtn = styled(motion.nav)`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.2s ease-in-out;
 
 
     @media screen and (max-width: 768px) {
         display: none;
     }
+
+    &:hover {
+        transition: all 0.6s ease-in-out;
+    }
 `
 
-export const GithubLink = styled(motion.a)`
+export const GithubLink = styled.a`
     border-radius: 50px;
-    background: white;
     margin: 10px;
     white-space: nowrap;
     padding: 4px 8px 0 8px;
-    color: #010606;
+    color: #fff;
     font-size: 16px;
     outline: none;
     border: none;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    
     text-decoration: none;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-        background: gold;
-        color: #010606;
+        transition: all 0.8s ease-in-out;
+        transform: rotate(0.25turn);
+        // background-color: #fff;
+        // color: #010606;
     }
 `
-export const LinkedinLink = styled(motion.a)`
+export const LinkedinLink = styled.a`
     border-radius: 10%;
-    background: #87CEFA;
+ 
     white-space: nowrap;
     padding: 0 2px 0 2px;
-    color: #010606;
+    color: #fff;
     font-size: 10px;
     outline: none;
     border: none;
@@ -142,8 +148,10 @@ export const LinkedinLink = styled(motion.a)`
     text-decoration: none;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-        background: gold;
-        color: #010606;
+        transition: all 0.5s ease-in-out;
+         transform: rotateX(50deg);
+        transform: scaleY(-1);
+        // background: #fff;
+        // color: #010606;
     }
 `

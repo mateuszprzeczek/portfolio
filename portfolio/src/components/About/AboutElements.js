@@ -19,6 +19,13 @@ export const AboutWrapper = styled.div`
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+
+    @media (orientation: landscape) {
+        height: 600px
+    }
+    @media (orientation: portrait) {
+        height: 600px
+    }
 `;
 
 export const AboutRow = styled.div`
@@ -88,6 +95,11 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
     max-width: 480px;
     height: 100%;
+
+    @media (orientation: landscape) {
+        width: 60%;
+        margin-left: 60px;
+    }
 `;
 
 export const Img = styled.img`
@@ -95,4 +107,6 @@ export const Img = styled.img`
     margin: 0 0 10px 0;
     padding-right: 10px;
     object-fit: contain;
+
+
 `;

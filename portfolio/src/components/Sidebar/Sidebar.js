@@ -1,7 +1,7 @@
 import React from 'react'
 import { VscGithub, AiOutlineLinkedin} from 'react-icons/all'
 import { IconContext } from "react-icons";
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, GithubLink, LinkedinLink } from './SidebarElements'
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SidebarLink2, SidebarLink3, SidebarLink4, SideBtnWrap, GithubLink, LinkedinLink } from './SidebarElements'
 
 const Sidebar = ({isOpen, toggle}) => {
     return (
@@ -12,15 +12,12 @@ const Sidebar = ({isOpen, toggle}) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <SidebarLink to="about" onClick={toggle}>O mnie</SidebarLink>
+                    <SidebarLink2 to="projects" onClick={toggle}>Projekty</SidebarLink2>
                 </SidebarMenu>
                 <SidebarMenu>
-                    <SidebarLink to="projects" onClick={toggle}>Projekty</SidebarLink>
-                </SidebarMenu>
-                <SidebarMenu>
-                    <SidebarLink to="techs" onClick={toggle}>Technologie</SidebarLink>
-                </SidebarMenu>
-                <SidebarMenu>
-                    <SidebarLink to="contact" onClick={toggle}>Kontakt</SidebarLink>
+                    <SidebarLink3 to="techs" onClick={toggle}>Technologie</SidebarLink3> 
+
+                    <SidebarLink4 to="contact" onClick={toggle}>Kontakt</SidebarLink4>
                 </SidebarMenu>
                 <SideBtnWrap>
                 <IconContext.Provider value={{ size: '2rem', title:'Mój Github' }}>

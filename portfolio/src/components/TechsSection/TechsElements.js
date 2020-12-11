@@ -8,8 +8,9 @@ background: ${({lightBg}) => (lightBg ? '#f9f9f9' : 'rgb(5, 5, 5)')};
 @media screen and (max-width: 768px) {
     padding: 230px 0;
 }
-@media screen and (max-width: 522px) {
-    padding: 50px 0;
+
+@media (orientation: landscape) {
+    padding: 0;
 }
 `;
 
@@ -52,6 +53,9 @@ export const Heading = styled.h1`
     @media screen and (max-width: 480px) {
         font-size: 32px;
     }
+    @media (orientation: landscape) { 
+        margin-bottom: 0;
+    }
 `;
 
 export const Subtitle = styled.p`
@@ -60,6 +64,10 @@ export const Subtitle = styled.p`
     font-size: 18px;
     line-height: 24px;
     color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+
+    @media (orientation: landscape) { 
+        margin-bottom: 0;
+    }
 `;
 
 export const Link = styled.a`
@@ -76,6 +84,11 @@ grid-template-areas: ${({ imgStart }) => imgStart ? ` ' col3 . ' 'col1  col4' 'c
 @media screen and (max-width: 768px) {
     grid-template-areas: ${({imgStart}) => imgStart ? `'col3' 'col1' 'col4' 'col2' 'col5'` : `'col3 col3' 'col2 col2' `};
 }
+
+@media (max-width: 500px) and  (orientation: landscape) { 
+    grid-template-areas: ' col3 . ' 'col1  col4' 'col2  col5';
+    padding: 0;
+}
 `
 
 export const Column = styled.div`
@@ -88,6 +101,11 @@ export const Column2 = styled.div`
 
 export const Column3 = styled.div`
     grid-area: col3;
+
+    @media (orientation: landscape) { 
+        margin-bottom: 0;
+        margin-top:80px
+    }
 `;
 
 export const Column4 = styled.div`
@@ -101,6 +119,10 @@ export const Column5 = styled.div`
 export const ImgWrap = styled(motion.div)`
     max-width: 555px;
     border-radius: 15px;
+
+    @media (max-width: 768px) {
+        max-width:400px;
+    }  
 `;
 
 export const Img = styled.img`

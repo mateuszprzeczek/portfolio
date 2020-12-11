@@ -42,10 +42,20 @@ export const SidebarMenu = styled.ul`
 
     @media screen and (max-width: 480px) {
         grid-template-rows: repeat(6, 12px);
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 'col1' 'col2' 'col3' 'col4';
+    }
+
+    @media (orientation: landscape) { 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'col1 col2' 'col3 col4';
     }
 `
 
 export const SidebarLink = styled(LinkS)`
+    grid-area: col1;
     display: flex;
     alignItems: center;
     justify-content: center;
@@ -55,7 +65,62 @@ export const SidebarLink = styled(LinkS)`
     transition: 0.2s ease-in-out;
     color: #fff;
     cursor: pointer;
+    margin-bottom: 40px;
 
+    &:hover {
+        color: gold;
+        transition: 0.2s ease-in-out;
+    }
+`
+
+export const SidebarLink2 = styled(LinkS)`
+    grid-area: col2;
+    display: flex;
+    alignItems: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+    
+
+    &:hover {
+        color: gold;
+        transition: 0.2s ease-in-out;
+    }
+`
+export const SidebarLink3 = styled(LinkS)`
+    grid-area: col3;
+    display: flex;
+    alignItems: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 40px;
+
+    &:hover {
+        color: gold;
+        transition: 0.2s ease-in-out;
+    }
+`
+export const SidebarLink4 = styled(LinkS)`
+    grid-area: col4;
+    display: flex;
+    alignItems: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 40px;
     &:hover {
         color: gold;
         transition: 0.2s ease-in-out;
@@ -89,10 +154,10 @@ export const GithubLink = styled.a`
 `
 export const LinkedinLink = styled.a`
     border-radius: 50px;
-    background: #87CEFA;
+    background: #fff;
     white-space: nowrap;
     padding: 16px 24px;
-    color: white;
+    color: black;
     font-size: 16px;
     outline: none;
     border: none;

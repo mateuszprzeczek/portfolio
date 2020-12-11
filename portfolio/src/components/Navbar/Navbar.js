@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import {animateScroll as scroll} from 'react-scroll'
 
-import {FaBars, VscGithub, AiOutlineLinkedin} from 'react-icons/all'
+import {FaBars, FaLinkedinIn, FaGithub} from 'react-icons/all'
 import { IconContext } from "react-icons";
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, GithubLink, LinkedinLink} from './NavbarElements'
 
@@ -38,7 +37,7 @@ const Navbar = ({toggle}) => {
             transition={{duration: 5}}
             >
                 <NavbarContainer>
-                    <NavLogo to="/portfolio" smooth={true} duration={500} spy={true} exact='true' offset={-80} onClick={scrollTop}>Portfolio</NavLogo>
+                    <NavLogo to="/portfolio" smooth='true' duration={500} exact='true' offset={-80} onClick={scrollTop}>Portfolio</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
@@ -49,48 +48,51 @@ const Navbar = ({toggle}) => {
                           whileTap={animateLi.tap}
                           transition={animateLi.transition}
                          >
-                            <NavLinks to="about" smooth={true} duration={500} spy={true} exact='true' offset={-80}>O mnie</NavLinks>
+                            <NavLinks to="about" smooth='true' duration={500} spy={true} exact='true' offset={-80}>O mnie</NavLinks>
                         </NavItem>
                         <NavItem
                         whileHover={animateLi.hover}
                         whileTap={{ scale: 0.9, rotate: -50 }}
                         transition={animateLi.transition}
                         >
-                            <NavLinks to="projects" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Projekty</NavLinks>
+                            <NavLinks to="projects" smooth='true' duration={500} spy={true} exact='true' offset={-80}>Projekty</NavLinks>
                         </NavItem>
                         <NavItem
                         whileHover={animateLi.hover}
                         whileTap={animateLi.tap}
                         transition={animateLi.transition}
                         >
-                            <NavLinks to="techs" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Technologie</NavLinks>
+                            <NavLinks to="techs" smooth='true' duration={500} spy={true} exact='true' offset={-80}>Technologie</NavLinks>
                         </NavItem>
                         <NavItem
                         whileHover={animateLi.hover}
                         whileTap={{ scale: 0.9, rotate: -50 }}
                         transition={animateLi.transition}
                         >
-                            <NavLinks to="contact" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Kontakt</NavLinks>
+                            <NavLinks to="contact" smooth='true' duration={500} spy={true} exact='true' offset={-80}>Kontakt</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn
                     initial={{ justifyContent: 'flex-end'}}
                     animate={{ justifyContent: 'center' }}
-                    transition={{duration: 7}}
+                    whileHover={{transition: 1}}
+                    whileTap={animateLi.tap}
+                    transition={animateLi.transition}
                     >
                     <IconContext.Provider value={{ size: '2rem', title:'Mój Github' }}>
                     <GithubLink 
                     initial={{ opacity: 0 }}
                     animate={{opacity: 1 }}
                     transition={{duration: 7}}
-                    href="https://github.com/mateuszprzeczek"><VscGithub /></GithubLink>
+                    
+                    href="https://github.com/mateuszprzeczek"><FaGithub /></GithubLink>
                         </IconContext.Provider>
                     <IconContext.Provider value={{ size: '2.2rem' }}>
                         <LinkedinLink 
                         initial={{ opacity: 0 }}
                         animate={{opacity: 1 }}
                         transition={{duration: 7}}
-                        href="https://www.linkedin.com/in/mateusz-prz%C4%99czek-b32b761b0/"><AiOutlineLinkedin /></LinkedinLink>
+                        href="https://www.linkedin.com/in/mateusz-prz%C4%99czek-b32b761b0/"><FaLinkedinIn /></LinkedinLink>
                         </IconContext.Provider>
                     </NavBtn>
                     
