@@ -31,6 +31,15 @@ grid-template-areas: ${({ imgStart }) => imgStart ? ` 'col4' 'col2 col3 col1'` :
 @media screen and (max-width: 768px) {
     grid-template-areas: ${({imgStart}) => imgStart ? `'col4' 'col1' 'col3' 'col2'` : `'col4 col4' 'col1 col1' 'col3 col3' 'col2 col2' `};
 }
+@media screen and (max-width: 500px) {
+    grid-template-areas: ${({imgStart}) => imgStart ? `'col4' 'col1' 'col3' 'col2'` : `'col4 col4' 'col1 col1' 'col3 col3' 'col2 col2' `};
+}
+
+@media (max-width: 700px) and  (orientation: landscape) { 
+    grid-template-areas: ' col4 col3 ' 'col2  col1' ;
+    padding: 0;
+}
+
 `
 
 export const TextWrapper = styled.div`
@@ -85,6 +94,11 @@ export const Column4 = styled.div`
 export const ImgWrap = styled(motion.div)`
     max-width: 555px;
     height: 100%;
+
+    @media (max-width: 500px) and (orientation: landscape) {
+        width: 80%;
+        margin-left: 60px;
+    }
     
     
 `;

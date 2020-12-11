@@ -70,7 +70,6 @@
     }
 }
 
-
 form {
     display: table;
     margin: 40px auto;
@@ -140,23 +139,5 @@ form {
             background: #0e82d4;
             cursor: pointer;
         }
-    }
-}
-
-.disabled {
-    cursor: not-allowed;
-    transition: all 0.2s ease-in-out;
-    font: 18px Helvetica, Arial, sans-serif;
-    border: none;
-    background: #1792E8;
-    color: #fff;
-    padding: 20px;
-    width: 80%;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-
-    &:hover {
-        cursor: not-allowed;
-        background: #0e82d4;
     }
 }

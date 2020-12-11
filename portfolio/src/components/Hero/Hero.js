@@ -18,7 +18,7 @@ const Hero = () => {
             </HeroBg>
             <HeroContent>
                 <HeroH1
-                initial={{ opacity: 0 , fontSize: '14px'}}
+                initial={{ opacity: 0 , fontSize: '38px'}}
                 animate={{opacity: 1, fontSize: '48px'}}
                 transition={{duration: 2}}
                 >Mateusz Przęczek

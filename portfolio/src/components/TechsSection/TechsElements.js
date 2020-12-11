@@ -85,7 +85,7 @@ grid-template-areas: ${({ imgStart }) => imgStart ? ` ' col3 . ' 'col1  col4' 'c
     grid-template-areas: ${({imgStart}) => imgStart ? `'col3' 'col1' 'col4' 'col2' 'col5'` : `'col3 col3' 'col2 col2' `};
 }
 
-@media (max-width: 500px) and  (orientation: landscape) { 
+@media (max-width: 700px) and  (orientation: landscape) { 
     grid-template-areas: ' col3 . ' 'col1  col4' 'col2  col5';
     padding: 0;
 }

@@ -5,7 +5,7 @@ export const AboutContainer = styled.div`
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : 'rgb(5, 5, 5)')};
 
     @media screen and (max-width: 768px) {
-        padding: 100px 0;
+        padding: 160px 0;
     }
 `;
 
@@ -20,10 +20,10 @@ export const AboutWrapper = styled.div`
     padding: 0 24px;
     justify-content: center;
 
-    @media (orientation: landscape) {
+    @media (max-width: 900px) and (orientation: landscape) {
         height: 600px
     }
-    @media (orientation: portrait) {
+    @media (max-width: 900px) and (orientation: portrait) {
         height: 600px
     }
 `;
@@ -96,7 +96,7 @@ export const ImgWrap = styled.div`
     max-width: 480px;
     height: 100%;
 
-    @media (orientation: landscape) {
+    @media (max-width: 768px) and (orientation: landscape) {
         width: 60%;
         margin-left: 60px;
     }

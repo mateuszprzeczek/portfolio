@@ -23,16 +23,15 @@ export const HeroContainer = styled.div`
         rgba(0,0,0,0.2) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
         z-index: 1;
     }
-
+    
     @media (max-width: 768px) {
         height: 660px;
     }
-    @media (max-width: 768px orientation: landscape) {
+    @media (max-width: 768px) and (orientation: landscape) {
         height: 400px;
     }
-    @media (min-height: 800px) {
-        height: 1000px;
-    }
+    
+   
 `
 
 export const HeroBg = styled.div`
@@ -66,7 +65,7 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled(motion.h1)`
     color: #fff;
-    font-size: 48px;
+    font-size: 22px;
     text-align: center;
     font-family: 'Quantico', sans-serif;
 
@@ -75,7 +74,7 @@ export const HeroH1 = styled(motion.h1)`
     }
 
     @media screen and (max-width: 768px) {
-        font-size: 32px;
+        font-size: 22px; 
     }
 `
 
