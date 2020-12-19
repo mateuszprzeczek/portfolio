@@ -2,7 +2,7 @@ import React from 'react'
 
 import { TechsContainer, TechsWrapper, TechsRow, Column, Column2, ImgWrap, VideoBg, VideoBg2, VideoBg3, TextWrapper, TopLine, Column3, Column4, Column5, Link } from './TechsElements'
 import olaVideo from '../../videos/olaM.mp4'
-import maniekVideo from '../../videos/paragliding.webm'
+import maniekVideo from '../../videos/paragliding2.webm'
 import questions from '../../videos/questions2.mp4'
 import zlobek from '../../videos/zlob.mp4'
 
