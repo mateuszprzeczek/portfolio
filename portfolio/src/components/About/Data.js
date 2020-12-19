@@ -1,7 +1,6 @@
-import mainImg from '../../images/matcv.jpg';
+import mainImg from '../../images/matcv.webp';
 import reactImg from '../../images/react.svg'
 import htmlImg from '../../images/html.svg'
-import olaVideo from '../../videos/ola.mp4'
 
 export const AboutData = {
     id: 'about',
@@ -48,7 +47,6 @@ export const ProjectsData = {
     imgStart: false,
     img: reactImg,
     img2:  htmlImg,
-    video: olaVideo,
     alt: 'Mateusz Przęczek',
     dark: true,
     primary: true,

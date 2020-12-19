@@ -2,9 +2,9 @@ import React from 'react'
 
 import { TechsContainer, TechsWrapper, TechsRow, Column, Column2, ImgWrap, VideoBg, VideoBg2, VideoBg3, TextWrapper, TopLine, Column3, Column4, Column5, Link } from './TechsElements'
 import olaVideo from '../../videos/olaM.mp4'
-import maniekVideo from '../../videos/paragliding.mp4'
+import maniekVideo from '../../videos/paragliding.webm'
 import questions from '../../videos/questions2.mp4'
-import zlobek from '../../videos/zlobek.mp4'
+import zlobek from '../../videos/zlob.mp4'
 
 const Techs = (props) => {
     return (
@@ -14,7 +14,7 @@ const Techs = (props) => {
                 <TechsRow imgStart={props.imgStart}>
                     <Column3>
                     <TextWrapper>
-                        <TopLine>{props.topLine}</TopLine>
+                        <TopLine>{props.topLine}</TopLine> 
                     </TextWrapper>
                     </Column3>
                     <Column4>
