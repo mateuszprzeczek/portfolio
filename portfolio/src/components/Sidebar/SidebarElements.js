@@ -15,6 +15,11 @@ export const SidebarContainer = styled.aside`
     transition: 0.3s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+
+    @media (min-width: 768px) {
+        opacity: 0;
+        top: -100%;
+    }
 `
 
 export const CloseIcon = styled(FaTimes)`
@@ -41,7 +46,7 @@ export const SidebarMenu = styled.ul`
     text-align: center;
     margin-left: -40px;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 792px) {
         grid-template-rows: repeat(6, 12px);
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
