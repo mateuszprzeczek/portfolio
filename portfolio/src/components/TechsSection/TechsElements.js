@@ -5,8 +5,13 @@ export const TechsContainer = styled.div`
 color: #fff;
 background: ${({lightBg}) => (lightBg ? '#f9f9f9' : 'rgb(5, 5, 5)')};
 
+
 @media screen and (max-width: 768px) {
-    padding: 230px 0;
+    padding: 60px 0 240px 0;
+}
+
+@media screen and (max-width: 400px) {
+    padding: 60px 0;
 }
 
 @media (orientation: landscape) {
@@ -83,6 +88,7 @@ grid-template-areas: ${({ imgStart }) => imgStart ? ` ' col3 . ' 'col1  col4' 'c
 
 @media screen and (max-width: 768px) {
     grid-template-areas: ${({imgStart}) => imgStart ? `'col3' 'col1' 'col4' 'col2' 'col5'` : `'col3 col3' 'col2 col2' `};
+    padding: 0;
 }
 
 @media (max-width: 700px) and  (orientation: landscape) { 

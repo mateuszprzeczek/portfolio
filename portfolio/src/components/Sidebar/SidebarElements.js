@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import {FaTimes} from 'react-icons/fa'
 import { Link as LinkS } from 'react-scroll';
 
@@ -39,6 +39,7 @@ export const SidebarMenu = styled.ul`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 20px);
     text-align: center;
+    margin-left: -40px;
 
     @media screen and (max-width: 480px) {
         grid-template-rows: repeat(6, 12px);

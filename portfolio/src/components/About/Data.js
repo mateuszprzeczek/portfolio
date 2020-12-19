@@ -42,7 +42,7 @@ export const ProjectsData = {
     lightTextDesc: true,
     topLine: 'Web Developer, programista Java, samouk. Na codzień freelancer, który tworzy responsywne strony internetowe wykorzystując framework React.',
     headline: 'Mateusz Przęczek',
-    description: 'Css, Html5, RWD, JavaScript, React, Redux, Bootstrap',
+    description: ['Css3', 'Html5', 'RWD', 'JavaScript', 'ES5', 'Reacj.js','React-Router', 'Redux', 'Bootstrap', 'styled-components'],
     buttonLabel: 'Technologie',
     imgStart: false,
     img: reactImg,

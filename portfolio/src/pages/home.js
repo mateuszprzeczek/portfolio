@@ -2,7 +2,6 @@ import React, { useState, Suspense } from 'react'
 
 import Sidebar from "../components/Sidebar/Sidebar";
 import Navbar from "../components/Navbar/Navbar";
-import Spinner from "../components/utility/Spinner/Spinner";
 import {AboutData, ProjectsData, TechsData, ContactData} from '../components/About/Data'
 
 const About = React.lazy(() => {
@@ -39,7 +38,7 @@ const Home = () => {
         <>
          <Sidebar isOpen={isOpen} toggle={toggle}/>
          <Navbar toggle={toggle}/>   
-         <Suspense fallback={ <Spinner /> }>
+         <Suspense fallback={ <div class='loader'>Loading...</div>}>
          <Hero />
          <About { ...AboutData } />
         <Techs {...TechsData} />

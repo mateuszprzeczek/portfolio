@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import {motion} from 'framer-motion'
 
 export const ProjectsContainer = styled.div`
@@ -31,15 +31,10 @@ grid-template-areas: ${({ imgStart }) => imgStart ? ` 'col4' 'col2 col3 col1'` :
 @media screen and (max-width: 768px) {
     grid-template-areas: ${({imgStart}) => imgStart ? `'col4' 'col1' 'col3' 'col2'` : `'col4 col4' 'col1 col1' 'col3 col3' 'col2 col2' `};
 }
+
 @media screen and (max-width: 500px) {
     grid-template-areas: ${({imgStart}) => imgStart ? `'col4' 'col1' 'col3' 'col2'` : `'col4 col4' 'col1 col1' 'col3 col3' 'col2 col2' `};
 }
-
-@media (max-width: 700px) and  (orientation: landscape) { 
-    grid-template-areas: ' col4 col3 ' 'col2  col1' ;
-    padding: 0;
-}
-
 `
 
 export const TextWrapper = styled.div`
@@ -62,6 +57,7 @@ export const TopLine = styled.p`
 `;
 
 export const Subtitle = styled.p`
+    display: block;
     max-width: 440px;
     margin-bottom: 35px;
     font-size: 18px;
@@ -82,7 +78,6 @@ export const Column2 = styled.div`
 
 export const Column3 = styled.div`
 
-    padding: 0 15px;
     grid-area: col3;
 `;
 export const Column4 = styled.div`
@@ -108,6 +103,24 @@ export const Img = styled(motion.img)`
     margin: 0 0 10px 0;
     padding-right: 0;
 
+    
+    @media (max-width: 768px) {
+        width: 70%;
+        padding: 0 0 0 30px;
+    }
+    
+    @media (max-width: 560px) {
+        width: 80%;
+    }
+
+    @media (max-width: 478px) {
+        width: 90%;
+    }
+
+    @media (max-width: 400px) {
+        width: 100%;
+    }
+
     @media (max-width: 500px) and (orientation: portrait) {
         object-fit: contain;
     }
@@ -116,3 +129,22 @@ export const Img = styled(motion.img)`
         margin-left: 60px;
     }
 `;
+
+export const Ul = styled.ul`
+    list-style: none;
+    color: #fff;
+    font-size: 1.2rem;
+
+    @media (min-width: 792px) {
+        margin-left: -50px;
+    }
+`
+
+export const Li = styled.li`
+    font-weight: bold;
+
+    &:hover {
+        color: gold;
+        cursor: pointer;
+    }
+`
