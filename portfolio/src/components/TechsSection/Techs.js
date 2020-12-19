@@ -19,28 +19,28 @@ const Techs = (props) => {
                     </Column3>
                     <Column4>
                     <ImgWrap>
-                    <Link href="https://questions-69538.web.app/">
+                    <Link href="https://questions-69538.web.app/" target="_blank">
                     <VideoBg3 autoPlay loop muted src={questions} type='video/mp4' />
                     </Link>
                     </ImgWrap>
                     </Column4>
                     <Column>
                     <ImgWrap>
-                    <Link href="https://mateuszprzeczek.github.io/Makeups/">
+                    <Link href="https://mateuszprzeczek.github.io/Makeups/" target="_blank">
                     <VideoBg autoPlay loop muted src={olaVideo} type='video/mp4' media="(max-width:480px)" />
                     </Link>
                     </ImgWrap>
                     </Column>
                     <Column2>
                     <ImgWrap>
-                    <Link href="https://github.com/mateuszprzeczek/Paraglider-eSchop">
+                    <Link href="https://github.com/mateuszprzeczek/Paraglider-eSchop" target="_blank">
                     <VideoBg2 autoPlay loop muted src={maniekVideo} type='video/mp4' />
                     </Link>
                     </ImgWrap>
                     </Column2>
                     <Column5>
                     <ImgWrap>
-                    <Link href="https://mateuszprzeczek.github.io/zlobek-fabryczka/">
+                    <Link href="https://mateuszprzeczek.github.io/zlobek-fabryczka/" target="_blank">
                     <VideoBg2 autoPlay loop muted src={zlobek} type='video/mp4' />
                     </Link>
                     </ImgWrap>

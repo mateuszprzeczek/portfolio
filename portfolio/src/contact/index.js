@@ -142,37 +142,11 @@ const ContactForm = (props) => {
   }
 
   const onToggleFormHandler = () => {
-    setSubmitted(!submitted)
+    window.location.replace('https://mateuszprzeczek.github.io/portfolio/');
   }
-
-  // let display = (
-  //   <form onSubmit={handleSubmit}>
-  //     <input
-  //       type="text"
-  //       name="name"
-  //       placeholder="Name"
-  //       onChange={updateInput}
-  //       value={formData.name || ''}
-  //     />
-  //     <input
-  //       type="email"
-  //       name="email"
-  //       placeholder="Email"
-  //       onChange={updateInput}
-  //       value={formData.email || ''}
-  //     />
-  //     <textarea
-  //       type="text"
-  //       name="message"
-  //       placeholder="Message"
-  //       onChange={updateInput}
-  //       value={formData.message || ''}
-  //     ></textarea>
-  //     <button type="submit">Submit</button>
-  //   </form>
-  // )
  
   if (submitted) {
+    button = null;
     form = (
         <>
           <h1>Wiadomość została wysłana.</h1>
