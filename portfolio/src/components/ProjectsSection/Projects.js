@@ -3,7 +3,7 @@ import React from 'react'
 import { ProjectsContainer, ProjectsWrapper, ProjectsRow, Column, Column2, ImgWrap, Img, TextWrapper, TopLine, Column3, Column4, Ul, Li } from '../ProjectsSection/ProjectsElements'
 
 const Projects = (props) => {
-    const listOfTechs = props.description.map(desc => <Li>{desc}</Li>)
+    const listOfTechs = props.description.map(desc => <Li key={desc}>{desc}</Li>)
     return (
         <>
         <ProjectsContainer lightBg={props.lightBg} id={props.id}>

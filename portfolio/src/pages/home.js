@@ -38,7 +38,7 @@ const Home = () => {
         <>
          <Sidebar isOpen={isOpen} toggle={toggle}/>
          <Navbar toggle={toggle}/>   
-         <Suspense fallback={ <div class='loader'>Loading...</div>}>
+         <Suspense fallback={ <div className='loader'>Loading...</div>}>
          <Hero />
          <About { ...AboutData } />
         <Techs {...TechsData} />

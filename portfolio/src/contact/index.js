@@ -36,7 +36,7 @@ const ContactForm = (props) => {
       touched: false,
   },
   message: {
-      elementType: "input",
+      elementType: "textarea",
       elementConfig: {
           type: "text",
           placeholder: "Wiadomość",
@@ -156,13 +156,14 @@ const ContactForm = (props) => {
   }
 
   return (
-    <div className="formContainer">
+    <div className="formContainer"> 
     <div className="contactForm" id={props.id}>
       <div className="row">
         <div className="column3">
-          <h1>Kontakt</h1>
+          
         </div>
         <div className="column">
+        <h1>Kontakt</h1>
     {errorMessage}
     <form onSubmit={submitHandler}>
       {form}
