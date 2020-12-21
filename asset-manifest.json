@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e78a2e0b.chunk.css",
-    "main.js": "/portfolio/static/js/main.8bc7add8.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.8bc7add8.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.54ab5b6a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.54ab5b6a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.1227c015.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.1227c015.js.map",
     "static/js/2.807b5fd0.chunk.js": "/portfolio/static/js/2.807b5fd0.chunk.js",
@@ -28,9 +28,9 @@
     "static/css/4.fae42c2e.chunk.css.map": "/portfolio/static/css/4.fae42c2e.chunk.css.map",
     "static/css/main.e78a2e0b.chunk.css.map": "/portfolio/static/css/main.e78a2e0b.chunk.css.map",
     "static/js/2.807b5fd0.chunk.js.LICENSE.txt": "/portfolio/static/js/2.807b5fd0.chunk.js.LICENSE.txt",
+    "static/media/about.906b9181.webp": "/portfolio/static/media/about.906b9181.webp",
     "static/media/styled.scss": "/portfolio/static/media/contact.49fcaadd.webp",
     "static/media/html.80fe3603.svg": "/portfolio/static/media/html.80fe3603.svg",
-    "static/media/matcv.d7a7180a.webp": "/portfolio/static/media/matcv.d7a7180a.webp",
     "static/media/olaM.c7aafa35.webm": "/portfolio/static/media/olaM.c7aafa35.webm",
     "static/media/paragliding2.b7e16b62.webm": "/portfolio/static/media/paragliding2.b7e16b62.webm",
     "static/media/questions2.14e2c611.webm": "/portfolio/static/media/questions2.14e2c611.webm",
@@ -42,6 +42,6 @@
     "static/js/runtime-main.1227c015.js",
     "static/js/2.807b5fd0.chunk.js",
     "static/css/main.e78a2e0b.chunk.css",
-    "static/js/main.8bc7add8.chunk.js"
+    "static/js/main.54ab5b6a.chunk.js"
   ]
 }
