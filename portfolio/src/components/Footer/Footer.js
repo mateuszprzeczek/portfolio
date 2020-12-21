@@ -9,49 +9,49 @@ const Footer = () => {
             <FooterWrapper>
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
-                        <FooterLinksItems>
+                        <FooterLinksItems> 
                             <FooterLinkTitle>Moje projekty</FooterLinkTitle>
-                                <FooterLink to="https://questions-69538.web.app/">Questions</FooterLink>
-                                <FooterLink to="https://mateuszprzeczek.github.io/Makeups/">MakeUps</FooterLink>
-                                <FooterLink to="https://github.com/mateuszprzeczek/Paraglider-eSchop">ParaE-Shop</FooterLink>
-                                <FooterLink to="https://mateuszprzeczek.github.io/zlobek-fabryczka/">Żłobek Fabryczka</FooterLink>
-                                <FooterLink to="https://github.com/mateuszprzeczek/Movie-Theater">Movie-Theater</FooterLink>
-                                <FooterLink to="https://github.com/mateuszprzeczek/PizzaDeliveryApp">PizzaDeliveryApp</FooterLink>
+                                <FooterLink target="_blank"  href="https://questions-69538.web.app/">Questions</FooterLink>
+                                <FooterLink target="_blank"  href="https://mateuszprzeczek.github.io/Makeups/">MakeUps</FooterLink>
+                                <FooterLink target="_blank"  href="https://github.com/mateuszprzeczek/Paraglider-eSchop">ParaE-Shop</FooterLink>
+                                <FooterLink target="_blank"  href="https://mateuszprzeczek.github.io/zlobek-fabryczka/">Żłobek Fabryczka</FooterLink>
+                                <FooterLink target="_blank"  href="https://github.com/mateuszprzeczek/Movie-Theater">Movie-Theater</FooterLink>
+                                <FooterLink target="_blank"  href="https://github.com/mateuszprzeczek/PizzaDeliveryApp">PizzaDeliveryApp</FooterLink>
                         </FooterLinksItems>
                         <FooterLinksItems>
                             <FooterLinkTitle>Technologie</FooterLinkTitle>
-                                <FooterLink to="https://www.javascript.com/">JavaScript</FooterLink>
-                                <FooterLink to="https://pl.reactjs.org/">React.js</FooterLink>
-                                <FooterLink to="https://react-redux.js.org/">React Redux</FooterLink>
-                                <FooterLink to="https://developer.mozilla.org/pl/docs/HTML/HTML5">Html5</FooterLink>
-                                <FooterLink to="https://developer.mozilla.org/en-US/docs/Web/CSS">Css/Scss</FooterLink>
-                                <FooterLink to="https://www.oracle.com/java/">Java8</FooterLink>
+                                <FooterLink target="_blank"  href="https://www.javascript.com/">JavaScript</FooterLink>
+                                <FooterLink target="_blank"  href="https://pl.reactjs.org/">React.js</FooterLink>
+                                <FooterLink target="_blank"  href="https://react-redux.js.org/">React Redux</FooterLink>
+                                <FooterLink target="_blank"  href="https://developer.mozilla.org/pl/docs/HTML/HTML5">Html5</FooterLink>
+                                <FooterLink target="_blank"  href="https://developer.mozilla.org/en-US/docs/Web/CSS">Css/Scss</FooterLink>
+                                <FooterLink target="_blank"  href="https://www.oracle.com/java/">Java8</FooterLink>
                         </FooterLinksItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
                         <FooterLinksItems>
                             <FooterLinkTitle>Social Media</FooterLinkTitle>
-                                <FooterLink to="https://www.facebook.com/mateusz.przeczek">Facebook</FooterLink>
-                                <FooterLink to="https://github.com/mateuszprzeczek">Github</FooterLink>
-                                <FooterLink to="https://www.linkedin.com/in/mateusz-prz%C4%99czek-b32b761b0/">Linkedin</FooterLink>
-                                <FooterLink to="/">Gmail</FooterLink>
-                                <FooterLink to="/">Twitter</FooterLink>
-                                <FooterLink to="/">StackOverflow</FooterLink>
+                                <FooterLink target="_blank"  href="https://www.facebook.com/mateusz.przeczek">Facebook</FooterLink>
+                                <FooterLink target="_blank"  href="https://github.com/mateuszprzeczek">Github</FooterLink>
+                                <FooterLink target="_blank"  href="https://www.linkedin.com/in/mateusz-prz%C4%99czek-b32b761b0/">Linkedin</FooterLink>
+                                <FooterLink target="_blank"  href="/">Gmail</FooterLink>
+                                <FooterLink target="_blank"  href="/">Twitter</FooterLink>
+                                <FooterLink target="_blank"  href="/">StackOverflow</FooterLink>
                         </FooterLinksItems>
                         <FooterLinksItems>
                             <FooterLinkTitle>Zobacz również</FooterLinkTitle>
-                                <FooterLink to="https://getbootstrap.com/">Bootstrap</FooterLink>
-                                <FooterLink to="https://fontawesome.com/">Font Awesome</FooterLink>
-                                <FooterLink to="https://animate.style/">Animate.css</FooterLink>
-                                <FooterLink to="https://www.codewars.com/">Code Wars</FooterLink>
-                                <FooterLink to="https://www.freecodecamp.org/learn/">freeCodeCamp</FooterLink>
-                                <FooterLink to="https://git-scm.com/">git</FooterLink>
+                                <FooterLink target="_blank"  href="https://getbootstrap.com/">Bootstrap</FooterLink>
+                                <FooterLink target="_blank"  href="https://fontawesome.com/">Font Awesome</FooterLink>
+                                <FooterLink target="_blank"  href="https://animate.style/">Animate.css</FooterLink>
+                                <FooterLink target="_blank"  href="https://www.codewars.com/">Code Wars</FooterLink>
+                                <FooterLink target="_blank"  href="https://www.freecodecamp.org/learn/">freeCodeCamp</FooterLink>
+                                <FooterLink target="_blank"  href="https://git-scm.com/">git</FooterLink>
                         </FooterLinksItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrapper>
-                        <SocialLogo to='/' >
+                        <SocialLogo target="_blank"  href='/' >
                             Portfolio
                         </SocialLogo>
                         <WebsiteRights>Portfolio {new Date().getFullYear()} </WebsiteRights>

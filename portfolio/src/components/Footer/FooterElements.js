@@ -55,14 +55,14 @@ export const FooterLinkTitle = styled.h1`
     margin-bottom: 16px;
 `
 
-export const FooterLink = styled(Link)`
+export const FooterLink = styled.a`
     color: #fff;
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-size: 14px;
 
     &:hover {
-        color: #01bf71;
+        color: gold;
         transition: 0.3s ease-out; 
     }
 ` 
@@ -83,7 +83,7 @@ export const SocialMediaWrapper = styled.div`
         flex-direction: column;
     }
 `
-export const SocialLogo = styled(Link)`
+export const SocialLogo = styled.a`
     color: #fff;
     justify-self: start;
     cursor: pointer;
