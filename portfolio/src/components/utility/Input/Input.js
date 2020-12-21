@@ -60,7 +60,7 @@ const Input = (props) => {
     if (props.invalid && props.touched) {
         validationError = (
             <p className={classes.ValidationError}>
-                Please enter a valid {props.valueType}
+                Proszę podać {props.valueType}
             </p>
         );
     }

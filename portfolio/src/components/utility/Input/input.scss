@@ -57,10 +57,10 @@
     transition: all 0.2s ease-in-out;
     font: 18px Helvetica, Arial, sans-serif;
     border: none;
-    background: #1792E8;
+    background: gold;
     color: #fff;
     padding: 20px;
-    width: 80%;
+    width: 100%;
     text-transform: uppercase;
     letter-spacing: 5px;
 
@@ -122,10 +122,13 @@ form {
         transition: all 0.2s ease-in-out;
         font: 18px Helvetica, Arial, sans-serif;
         border: none;
-        background: #1792E8;
+        border-radius: 10px;
+        background: gold;
         color: #fff;
         padding: 20px;
         width: 100%;
+        filter: drop-shadow(0 0 0.75rem gold);
+        transition: all 0.5s ease-in-out;
         text-transform: uppercase;
         letter-spacing: 5px;
 
@@ -136,7 +139,8 @@ form {
         }
 
         &:hover {
-            background: #0e82d4;
+            background: silver;
+            color: #101522;
             cursor: pointer;
         }
     }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import Video from '../../videos/video3.webm'
+import Video from '../../videos/Nowy film.webm'
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroBtnWrapper, HeroP, ArrowFoward, ArrowRight } from './HeroElements'
 import {Button} from '../ButtonElement'
 

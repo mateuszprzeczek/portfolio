@@ -21,7 +21,7 @@ const ContactForm = (props) => {
       valid: false,
       touched: false,
   },
-  name: {
+  nazwa: {
       elementType: "input",
       elementConfig: {
           type: "text",
@@ -35,7 +35,7 @@ const ContactForm = (props) => {
       valid: false,
       touched: false,
   },
-  message: {
+  wiadomość: {
       elementType: "textarea",
       elementConfig: {
           type: "text",
@@ -81,8 +81,8 @@ const ContactForm = (props) => {
     if (rules.isEmail) {
         const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
         isValid = pattern.test(value) && isValid;
-        isValid ? setSubmitButtonVisible(true) : setSubmitButtonVisible(false)
     }
+     isValid ? setSubmitButtonVisible(true) : setSubmitButtonVisible(false)
     return isValid;
 };
 
@@ -138,7 +138,7 @@ const ContactForm = (props) => {
 
   let button = null;
   if(submitButtonVisible) {
-    button = <button type="submit">Submit</button>
+    button = <button type="submit">WYŚLIJ</button>
   }
 
   const onToggleFormHandler = () => {

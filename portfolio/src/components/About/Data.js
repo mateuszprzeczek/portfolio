@@ -1,4 +1,4 @@
-import mainImg from '../../images/matcv.webp';
+import mainImg from '../../images/about.webp';
 import reactImg from '../../images/react.svg'
 import htmlImg from '../../images/html.svg'
 
