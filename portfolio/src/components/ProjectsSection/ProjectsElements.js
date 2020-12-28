@@ -49,11 +49,17 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
     color: gold;
-    font-size: 32px;
+    font-size: 44px;
     line-height: 16px;
     font-weight: 700;
-    letter-spacing: 1.4px;
+    letter-spacing: 4px;
     text-transform: uppercase;
+    filter: drop-shadow(0 0 1rem gold);
+    text-shadow: 4px 3px 0px #333333;
+
+    @media (max-width: 500px) {
+        font-size: 32px;
+    }
 `;
 
 export const Subtitle = styled.p`
@@ -63,6 +69,7 @@ export const Subtitle = styled.p`
     font-size: 18px;
     line-height: 24px;
     color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+    
 `;
 
 export const Column = styled.div`
@@ -106,7 +113,7 @@ export const Img = styled(motion.img)`
     
     @media (max-width: 768px) {
         width: 70%;
-        padding: 0 0 0 30px;
+        padding: 0 0 0 50px;
     }
     
     @media (max-width: 560px) {
@@ -142,9 +149,11 @@ export const Ul = styled.ul`
 
 export const Li = styled.li`
     font-weight: bold;
+    
+    text-shadow: 2px 2px 0px #010606;
 
     &:hover {
         color: gold;
-        cursor: pointer;
+        cursor: default;
     }
 `

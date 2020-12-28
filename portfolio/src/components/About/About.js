@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Button } from '../ButtonElement';
-import { AboutContainer, AboutWrapper, AboutRow, Column, Column2, TextWrapper, TopLine, Subtitle, BtnWrap, ImgWrap, Img } from './AboutElements'
+import { AboutContainer, AboutWrapper, AboutRow, Column, Column2, Column3, TextWrapper, TopLine, Subtitle, BtnWrap, ImgWrap, Img } from './AboutElements'
 
 
 const About = (props) => {
@@ -10,9 +10,14 @@ const About = (props) => {
          <AboutContainer lightBg={props.lightBg} id={props.id}>
              <AboutWrapper>
                  <AboutRow imgStart={props.imgStart}>
+                     <Column3>
+                     
+                     <TopLine>{props.topLine}</TopLine>
+                     
+                     </Column3>
                      <Column>
                         <TextWrapper>
-                             <TopLine>{props.topLine}</TopLine>
+                             
                             <Subtitle darkText={props.darkText}>{props.description}</Subtitle>
                             <BtnWrap>
                         <Button to='techs'

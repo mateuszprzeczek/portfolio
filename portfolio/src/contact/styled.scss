@@ -8,6 +8,11 @@
         background-position: 0px -20px;
     }
 
+    // @media (max-width: 1268px) {
+    //     background-position: -70px 0;
+    //     margin-bottom: -20px;
+    // }
+
     @media (max-width: 1045px) {
         background-position: -70px 0;
     }
@@ -25,6 +30,7 @@
     @media (max-width: 768px) {
         // background-size: 150%;
         background-position: -370px -120px;
+        margin-bottom: -120px;
     }
 
     @media (max-width: 692px) {
@@ -96,6 +102,8 @@
 
     h1 {
         padding-left: 20px;
+        filter: drop-shadow(0 0 1rem #fff);
+        text-shadow: 1px 2px 0px #fff;
     }
 
     @media (min-width: 1405px) {

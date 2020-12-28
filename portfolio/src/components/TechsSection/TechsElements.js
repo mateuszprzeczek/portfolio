@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import {motion} from 'framer-motion'
 
 export const TechsContainer = styled.div`
 color: #fff;
-background: ${({lightBg}) => (lightBg ? '#f9f9f9' : 'rgb(5, 5, 5)')};
+background: ${({lightBg}) => (lightBg ? 'radial-gradient(circle, rgba(218,165,32,0.7567401960784313) 47%, rgba(218,165,32,1) 100%);' : 'rgb(5, 5, 5)')};
 
 
 @media screen and (max-width: 768px) {
@@ -11,7 +11,7 @@ background: ${({lightBg}) => (lightBg ? '#f9f9f9' : 'rgb(5, 5, 5)')};
 }
 
 @media screen and (max-width: 400px) {
-    padding: 60px 0;
+    padding: 60px 0 120px 0;
 }
 
 @media (orientation: landscape) {
@@ -39,13 +39,20 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: gold;
-    font-size: 32px;
+    color: #fff;
+    font-size: 44px;
     line-height: 16px;
     font-weight: 700;
-    letter-spacing: 1.4px;
+    letter-spacing: 24px;
     text-transform: uppercase;
+    filter: drop-shadow(0 0 1rem #fff);
+    text-shadow: 4px 3px 0px #333333;
 
+    @media (max-width: 500px) {
+        font-size: 32px;
+    }
+
+    
 `;
 
 export const Heading = styled.h1`
@@ -84,7 +91,7 @@ display: grid;
 gap: 2%;
 grid-auto-columns: minmax(auto, 1fr);
 align-items: center;
-grid-template-areas: ${({ imgStart }) => imgStart ? ` ' col3 . ' 'col1  col4' 'col2  col5'` : ` 'col3 col2 col1'`};
+grid-template-areas: ${({ imgStart }) => imgStart ? ` ' col3 col3 ' 'col1  col4' 'col2  col5'` : ` 'col3 col2 col1'`};
 
 @media screen and (max-width: 768px) {
     grid-template-areas: ${({imgStart}) => imgStart ? `'col3' 'col1' 'col4' 'col2' 'col5'` : `'col3 col3' 'col2 col2' `};
@@ -92,7 +99,7 @@ grid-template-areas: ${({ imgStart }) => imgStart ? ` ' col3 . ' 'col1  col4' 'c
 }
 
 @media (max-width: 700px) and  (orientation: landscape) { 
-    grid-template-areas: ' col3 . ' 'col1  col4' 'col2  col5';
+    grid-template-areas: ' col3 col3 ' 'col1  col4' 'col2  col5';
     padding: 0;
 }
 `
@@ -108,10 +115,10 @@ export const Column2 = styled.div`
 export const Column3 = styled.div`
     grid-area: col3;
 
-    @media (orientation: landscape) { 
-        margin-bottom: 0;
-        margin-top:80px
-    }
+    // @media (orientation: landscape) { 
+    //     margin-bottom: 0;
+    //     margin-top:80px
+    // }
 `;
 
 export const Column4 = styled.div`

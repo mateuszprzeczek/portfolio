@@ -52,7 +52,6 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrapper>
                         <SocialLogo target="_blank"  href='/' >
-                            Portfolio
                         </SocialLogo>
                         <WebsiteRights>Portfolio {new Date().getFullYear()} </WebsiteRights>
                         <SocialIcons>
