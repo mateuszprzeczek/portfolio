@@ -26,6 +26,7 @@ const About = (props) => {
                             spy={true}
                             exact="true"
                             offset={-80}
+                            fontBig={props.fontBig}
                         >{props.buttonLabel}</Button>
                              </BtnWrap>
                          </TextWrapper>

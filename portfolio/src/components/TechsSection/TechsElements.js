@@ -52,6 +52,16 @@ export const TopLine = styled.p`
         font-size: 32px;
     }
 
+    @media (max-width: 365px) {
+        font-size: 28px;
+        letter-spacing: 22px;
+    }
+
+    @media (max-width: 290px) {
+        font-size: 26px;
+        letter-spacing: 18px; 
+    }
+
     
 `;
 
@@ -136,6 +146,10 @@ export const ImgWrap = styled(motion.div)`
     @media (max-width: 768px) {
         max-width:400px;
     }  
+    @media (max-width: 365px) {
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
 `;
 
 export const Img = styled.img`
@@ -149,6 +163,8 @@ export const VideoBg = styled(motion.video)`
     border-radius: 15px;
     -o-object-fit: cover;
     object-fit: cover;
+
+  
 `
 export const VideoBg2 = styled(motion.video)`
 width: 100%;
@@ -156,6 +172,7 @@ height: auto;
 border-radius: 15px;
     -o-object-fit: scale-down;
     object-fit: scale-down;
+   
 `
 export const VideoBg3 = styled(motion.video)`
 width: 100%;
@@ -163,5 +180,5 @@ height: auto;
 border-radius: 15px;
     -o-object-fit: cover;
     object-fit: cover;
-
+   
 `

@@ -1,5 +1,5 @@
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import {motion} from 'framer-motion'
 
 export const HeroContainer = styled.div`
@@ -30,6 +30,8 @@ export const HeroContainer = styled.div`
     @media (max-width: 768px) and (orientation: landscape) {
         height: 400px;
     }
+
+    
     
    
 `
@@ -61,6 +63,10 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 300px) {
+     padding: 8px 16px;   
+    }
 `
 
 export const HeroH1 = styled(motion.h1)`

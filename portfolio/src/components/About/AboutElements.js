@@ -6,7 +6,7 @@ export const AboutContainer = styled.div`
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : 'rgb(5, 5, 5)')};
 
     @media screen and (max-width: 768px) {
-        padding: 40px 0 160px 0;
+        padding: 40px 0 240px 0;
     }
 `;
 
@@ -53,26 +53,38 @@ export const Column2 = styled.div`
 `;
 
 export const Column3 = styled.div`
-    
-    grid-area: col3;
+grid-area: col3;
+
+@media (min-width: 769px) {
+        align-self: end;
+        margin-bottom: -65px;
+        
+    }
 `;
 
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom:60px;
+    margin: 0 auto;
 `;
 
 export const TopLine = styled.p`
+    display: block;
+    
     color: gold;
-    font-size: 42px;
-    line-height: 16px;
+    font-size: 32px;
     font-weight: 700;
     letter-spacing: 5px;
     text-transform: uppercase;
     
     filter: drop-shadow(0 0 0.2rem #000);
     text-shadow: 2px 2px 0px #010606;
+
+    @media (min-width: 769px) {
+        font-size: 42px;
+        text-align: center;
+    }
 `;
 
 export const Heading = styled.h1`
@@ -89,12 +101,13 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-    max-width: 440px;
+    max-width: 320px;
     margin-bottom: 35px;
     font-size: 24px;
     line-height: 24px;
     text-align: justify;
     color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+    margin: 0 auto 35px auto;
 
     @media (max-width: 500px) {
         font-size: 18px
@@ -103,7 +116,14 @@ export const Subtitle = styled.p`
 
 export const BtnWrap = styled.div`
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+   
+
+    
+
+    @media (max-width: 500px)  {
+        margin-top: 48px;
+    }
 `;
 
 export const ImgWrap = styled.div`
@@ -119,9 +139,8 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
-    padding-right: 10px;
     object-fit: contain;
-    margin-left: 40px;
+    margin-left: 0px;
 
     @media (max-width: 500px) {
         margin-left: 0;

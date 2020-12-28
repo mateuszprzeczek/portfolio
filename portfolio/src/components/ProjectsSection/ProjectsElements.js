@@ -6,7 +6,11 @@ color: #fff;
 background: ${({lightBg}) => (lightBg ? '#f9f9f9' : 'rgb(5, 5, 5)')};
 
 @media screen and (max-width: 768px) {
-    padding: 30px 0;
+    padding: 30px 0 120px 0;
+}
+
+@media (max-width: 450px) {
+    padding: 30px 0 30px 0;
 }
 `;
 
@@ -60,6 +64,10 @@ export const TopLine = styled.p`
     @media (max-width: 500px) {
         font-size: 32px;
     }
+
+    @media (max-width: 290px) {
+        font-size: 26px;
+    }
 `;
 
 export const Subtitle = styled.p`
@@ -84,8 +92,11 @@ export const Column2 = styled.div`
 `;
 
 export const Column3 = styled.div`
-
     grid-area: col3;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 `;
 export const Column4 = styled.div`
 
@@ -96,6 +107,7 @@ export const Column4 = styled.div`
 export const ImgWrap = styled(motion.div)`
     max-width: 555px;
     height: 100%;
+    
 
     @media (max-width: 500px) and (orientation: landscape) {
         width: 80%;
@@ -113,19 +125,23 @@ export const Img = styled(motion.img)`
     
     @media (max-width: 768px) {
         width: 70%;
-        padding: 0 0 0 50px;
+        
+        margin-left: 100px;
     }
-    
+     
     @media (max-width: 560px) {
         width: 80%;
+        margin-left: 60px;
     }
 
     @media (max-width: 478px) {
         width: 90%;
+        margin-left: 40px;
     }
 
     @media (max-width: 400px) {
         width: 100%;
+        margin-left: 0px;
     }
 
     @media (max-width: 500px) and (orientation: portrait) {
