@@ -2,7 +2,7 @@ import React from 'react'
 
 import { TechsContainer, TechsWrapper, TechsRow, Column, Column2, ImgWrap, VideoBg, VideoBg2, VideoBg3, TextWrapper, TopLine, Column3, Column4, Column5, Link } from './TechsElements'
 import olaVideo from '../../videos/olaM.webm'
-import maniekVideo from '../../videos/paragliding2.webm'
+import dobreZiolo from '../../videos/dobre-ziolo.webm'
 import questions from '../../videos/questions2.webm'
 import zlobek from '../../videos/zlob.webm'
 
@@ -33,8 +33,8 @@ const Techs = (props) => {
                     </Column>
                     <Column2>
                     <ImgWrap>
-                    <Link href="https://github.com/mateuszprzeczek/Paraglider-eSchop" target="_blank">
-                    <VideoBg2 autoPlay loop muted src={maniekVideo} type='video/mp4' />
+                    <Link href="http://dobreziolo.com.pl/" target="_blank">
+                    <VideoBg2 autoPlay loop muted src={dobreZiolo} type='video/mp4' />
                     </Link>
                     </ImgWrap>
                     </Column2>

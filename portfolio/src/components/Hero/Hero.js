@@ -27,7 +27,7 @@ const Hero = () => {
                 initial={{ opacity: 0 , marginTop: '-200px'}}
                 animate={{opacity: 1 , marginTop: '24px'}}
                 transition={{duration: 4}}
-                >Front-end Developer with Html, Css, Javascript, React js, Redux, Node js</HeroP>
+                >Front End Developer</HeroP>
                 <HeroBtnWrapper
                 initial={{ opacity: 0 }}
                 animate={{opacity: 1 }}
@@ -41,7 +41,7 @@ const Hero = () => {
                             spy={true}
                             exact="true"
                             offset={-80}>
-                        Zobacz moje projekty {hover ? <ArrowFoward /> : <ArrowRight /> }
+                        See my projects {hover ? <ArrowFoward /> : <ArrowRight /> }
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>

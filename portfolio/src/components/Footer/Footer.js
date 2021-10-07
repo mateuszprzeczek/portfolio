@@ -10,16 +10,16 @@ const Footer = () => {
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinksItems> 
-                            <FooterLinkTitle>Moje projekty</FooterLinkTitle>
+                            <FooterLinkTitle>Projects</FooterLinkTitle>
+                                <FooterLink target="_blank"  href="https://mateuszprzeczek.github.io/limit-order-book/">Limit-Order-Book</FooterLink>
+                                <FooterLink target="_blank"  href="https://mateuszprzeczek.github.io/pathfinder/">PathFinder</FooterLink>
                                 <FooterLink target="_blank"  href="https://questions-69538.web.app/">Questions</FooterLink>
                                 <FooterLink target="_blank"  href="https://mateuszprzeczek.github.io/Makeups/">MakeUps</FooterLink>
                                 <FooterLink target="_blank"  href="https://github.com/mateuszprzeczek/Paraglider-eSchop">ParaE-Shop</FooterLink>
                                 <FooterLink target="_blank"  href="https://mateuszprzeczek.github.io/zlobek-fabryczka/">Żłobek Fabryczka</FooterLink>
-                                <FooterLink target="_blank"  href="https://github.com/mateuszprzeczek/Movie-Theater">Movie-Theater</FooterLink>
-                                <FooterLink target="_blank"  href="https://github.com/mateuszprzeczek/PizzaDeliveryApp">PizzaDeliveryApp</FooterLink>
                         </FooterLinksItems>
                         <FooterLinksItems>
-                            <FooterLinkTitle>Technologie</FooterLinkTitle>
+                            <FooterLinkTitle>Utilities</FooterLinkTitle>
                                 <FooterLink target="_blank"  href="https://www.javascript.com/">JavaScript</FooterLink>
                                 <FooterLink target="_blank"  href="https://pl.reactjs.org/">React.js</FooterLink>
                                 <FooterLink target="_blank"  href="https://react-redux.js.org/">React Redux</FooterLink>
@@ -39,7 +39,7 @@ const Footer = () => {
                                 <FooterLink target="_blank"  href="/">StackOverflow</FooterLink>
                         </FooterLinksItems>
                         <FooterLinksItems>
-                            <FooterLinkTitle>Zobacz również</FooterLinkTitle>
+                            <FooterLinkTitle>See also</FooterLinkTitle>
                                 <FooterLink target="_blank"  href="https://getbootstrap.com/">Bootstrap</FooterLink>
                                 <FooterLink target="_blank"  href="https://fontawesome.com/">Font Awesome</FooterLink>
                                 <FooterLink target="_blank"  href="https://animate.style/">Animate.css</FooterLink>

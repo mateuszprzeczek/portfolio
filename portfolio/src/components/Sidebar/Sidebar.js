@@ -11,13 +11,13 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="about" onClick={toggle}>O mnie</SidebarLink>
-                    <SidebarLink2 to="projects" onClick={toggle}>Projekty</SidebarLink2>
+                    <SidebarLink to="about" onClick={toggle}>About me</SidebarLink>
+                    <SidebarLink2 to="projects" onClick={toggle}>Projects</SidebarLink2>
                 </SidebarMenu>
                 <SidebarMenu>
-                    <SidebarLink3 to="techs" onClick={toggle}>Technologie</SidebarLink3> 
+                    <SidebarLink3 to="techs" onClick={toggle}>Utilities</SidebarLink3> 
 
-                    <SidebarLink4 to="contact" onClick={toggle}>Kontakt</SidebarLink4>
+                    <SidebarLink4 to="contact" onClick={toggle}>Contact</SidebarLink4>
                 </SidebarMenu>
                 <SideBtnWrap>
                 <IconContext.Provider value={{ size: '2rem', title:'Mój Github' }}>

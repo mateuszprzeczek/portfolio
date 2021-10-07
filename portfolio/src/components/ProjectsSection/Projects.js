@@ -11,7 +11,7 @@ const Projects = (props) => {
                 <ProjectsRow imgStart={props.imgStart}>
                     <Column4>
                     <TextWrapper>
-                        <TopLine>Technologie</TopLine>
+                        <TopLine>Utilities</TopLine>
                     </TextWrapper>
                     </Column4>
                     <Column>

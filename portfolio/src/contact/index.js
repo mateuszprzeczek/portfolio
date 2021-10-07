@@ -25,7 +25,7 @@ const ContactForm = (props) => {
       elementType: "input",
       elementConfig: {
           type: "text",
-          placeholder: "Nazwa",
+          placeholder: "Title",
       },
       value: "",
       validation: {
@@ -39,7 +39,7 @@ const ContactForm = (props) => {
       elementType: "textarea",
       elementConfig: {
           type: "text",
-          placeholder: "Wiadomość",
+          placeholder: "Message",
       },
       value: "",
       validation: {
@@ -138,7 +138,7 @@ const ContactForm = (props) => {
 
   let button = null;
   if(submitButtonVisible) {
-    button = <button type="submit">WYŚLIJ</button>
+    button = <button type="submit">SEND</button>
   }
 
   const onToggleFormHandler = () => {
@@ -149,7 +149,7 @@ const ContactForm = (props) => {
     button = null;
     form = (
         <>
-          <h1>Wiadomość została wysłana.</h1>
+          <h1>The message has been send...</h1>
           <button className='button' onClick={onToggleFormHandler}>OK</button>
         </>
     )
@@ -163,7 +163,7 @@ const ContactForm = (props) => {
           
         </div>
         <div className="column">
-        <h1>Kontakt</h1>
+        <h1>Contact</h1>
     {errorMessage}
     <form onSubmit={submitHandler}>
       {form}

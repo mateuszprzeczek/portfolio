@@ -48,28 +48,28 @@ const Navbar = ({toggle}) => {
                           whileTap={animateLi.tap}
                           transition={animateLi.transition}
                          >
-                            <NavLinks to="about" smooth='true' duration={500} spy={true} exact='true' offset={-80}>O mnie</NavLinks>
+                            <NavLinks to="about" smooth='true' duration={500} spy={true} exact='true' offset={-80}>About me</NavLinks>
                         </NavItem>
                         <NavItem
                         whileHover={animateLi.hover}
                         whileTap={{ scale: 0.9, rotate: -50 }}
                         transition={animateLi.transition}
                         >
-                            <NavLinks to="projects" smooth='true' duration={500} spy={true} exact='true' offset={-80}>Projekty</NavLinks>
+                            <NavLinks to="projects" smooth='true' duration={500} spy={true} exact='true' offset={-80}>Projects</NavLinks>
                         </NavItem>
                         <NavItem
                         whileHover={animateLi.hover}
                         whileTap={animateLi.tap}
                         transition={animateLi.transition}
                         >
-                            <NavLinks to="techs" smooth='true' duration={500} spy={true} exact='true' offset={-80}>Technologie</NavLinks>
+                            <NavLinks to="techs" smooth='true' duration={500} spy={true} exact='true' offset={-80}>Utilities</NavLinks>
                         </NavItem>
                         <NavItem
                         whileHover={animateLi.hover}
                         whileTap={{ scale: 0.9, rotate: -50 }}
                         transition={animateLi.transition}
                         >
-                            <NavLinks to="contact" smooth='true' duration={500} spy={true} exact='true' offset={-80}>Kontakt</NavLinks>
+                            <NavLinks to="contact" smooth='true' duration={500} spy={true} exact='true' offset={-80}>Contact</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn
